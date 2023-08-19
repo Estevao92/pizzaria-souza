@@ -1,0 +1,182 @@
+:root {
+    --preto: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(18,15,15,1) 0%, rgba(62,62,62,1) 100%);
+    --vinho: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,33,33,1) 50%, rgba(163,30,30,1) 100%);  
+    --branco: #ffffff;
+    font-family: 'Lumanosimo', cursive;
+}
+
+/* CABECALHO */
+header {
+    background: var(--preto);    
+}
+
+.cabecalho__titulo {
+    background: var(--vinho);
+    color: var(--branco);
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecalho__ancoras {
+    color: var(--branco);
+    text-decoration: none;        
+}
+
+header h2 {
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* IMAGEM PIZZA */
+.div__um {
+    background: var(--vinho);    
+}
+
+.imagem__pizza {
+    width: 80vw;
+    padding: 40px;        
+}
+
+.imagem__pizza__dois {
+    display: none;
+} 
+
+/* QUEM SOMOS */
+.quem__somos {
+    background: var(--vinho);
+}
+
+.titulo__quem__somos {
+    background: var(--preto);
+    font-size: 30px;
+    color: var(--branco);
+    text-align: center;
+    padding: 6px;
+}
+
+.paragrafo__quem__somos {
+    font-size: 16px;
+    color: var(--branco);
+    text-align: center;
+    padding: 15px 6px;
+}
+
+/* CARDÁPIO */
+
+.cardapio { 
+    background: var(--vinho);
+    color: var(--branco);
+}
+
+.titulo__cardapio {
+    font-size: 30px;
+    text-align: center;
+    background: var(--preto);
+    padding: 6px;
+}
+
+.tipos__de__pizza {
+    padding: 15px 6px;
+    font-size: 20px;
+    background: var(--preto);
+    padding: 6px;
+}
+
+.lista__pizzas li {
+    padding: 6px 6px;
+}
+
+.bebidas__titulos {
+    font-size: 18px;
+    padding: 15px 6px;
+    background: var(--preto);
+    padding: 6px;
+}
+
+/* RODAPÉ */
+
+footer h2 {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3 {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 16px 0 6px 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .imagem__pizza {
+        display: none;
+    }
+
+    .imagem__pizza__dois {
+        display: block;
+        width: 100vw;
+    }
+
+    .cabecalho__titulo {
+        font-size: 72px;
+    }
+
+    header h2 {
+        font-size: 36px;        
+    }
+
+    .titulo__quem__somos {
+        font-size: 60px;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .paragrafo__quem__somos {
+        font-size: 32px;
+        text-align: center;
+        padding: 30px 12px;
+    }
+
+    .titulo__cardapio {
+        font-size: 60px;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .tipos__de__pizza {
+        padding: 30px 12px;
+        font-size: 40px;
+        padding: 12px;
+    }
+    
+    .lista__pizzas li {
+        padding: 12px 12px;
+        font-size: 32px;
+    }
+    
+    .bebidas__titulos {
+        font-size: 36px;
+        padding: 30px 12px;       
+    }
+
+    footer h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    footer h3 {
+        padding: 32px 0 6px 0;
+        text-align: center;
+        font-size: 40px;
+    }    
+}
+
+@media screen and (min-width:1024px) {
+    .cabecalho__ancoras:hover {
+        color: gold;
+    }
+} 
